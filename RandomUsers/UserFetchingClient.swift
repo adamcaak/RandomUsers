@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct UserFetchingClient {
+    static private let url = URL(string: "https://randomuser.me/api/?results=10&format=pretty")!
+    
+    static func getUsers() async {
+        async let (data, _) = await URLSession.shared.data(from: url)
+    }
+}
