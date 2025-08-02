@@ -15,3 +15,7 @@ struct UserFetchingClient {
         return try await String(data: data, encoding: .utf8)!
     }
 }
+
+class UserData {
+    var users: String = ""
+}
