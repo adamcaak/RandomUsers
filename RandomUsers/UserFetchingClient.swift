@@ -21,6 +21,10 @@ class UserData {
     
     init() {
         Task {
+            await loadUsers()
+        }
+        
+        func loadUsers() async {
             do {
                 let user = try await UserFetchingClient.getUsers()
                 self.users = user
