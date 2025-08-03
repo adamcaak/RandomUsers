@@ -18,4 +18,16 @@ struct UserFetchingClient {
 
 class UserData {
     var users: String = ""
+    
+    init() {
+        Task {
+            do {
+                let user = try await UserFetchingClient.getUsers()
+                self.users = user
+            }
+            catch {
+                print(error)
+            }
+        }
+    }
 }
