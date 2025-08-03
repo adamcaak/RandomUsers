@@ -16,7 +16,7 @@ struct UserFetchingClient {
     }
 }
 
-class UserData {
+class UserData: ObservableObject {
     @Published var users: String = ""
     
     init() {
