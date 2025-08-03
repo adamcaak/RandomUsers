@@ -17,7 +17,7 @@ struct UserFetchingClient {
 }
 
 class UserData {
-    var users: String = ""
+    @Published var users: String = ""
     
     init() {
         Task {
