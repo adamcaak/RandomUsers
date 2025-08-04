@@ -11,7 +11,7 @@ struct Response: Decodable {
     let users: [User]
     
     enum CodingKeys: CodingKey {
-        case users
+        case users = "results"
     }
 }
 
