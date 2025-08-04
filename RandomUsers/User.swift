@@ -9,6 +9,10 @@ import Foundation
 
 struct Response: Decodable {
     let users: [User]
+    
+    enum CodingKeys: CodingKey {
+        case users
+    }
 }
 
 struct User: Decodable, Identifiable {
