@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct Response {
+    let users: [User]
+}
+
 struct User: Identifiable {
     let id: String
     let name: String
