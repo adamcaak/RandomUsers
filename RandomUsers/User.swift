@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct Response {
+struct Response: Decodable {
     let users: [User]
 }
 
-struct User: Identifiable {
+struct User: Decodable, Identifiable {
     let id: String
     let name: String
 }
 
-struct Name {
+struct Name: Decodable {
     let title: String
     let first: String
     let last: String
