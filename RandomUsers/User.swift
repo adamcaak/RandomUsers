@@ -10,7 +10,7 @@ import Foundation
 struct Response: Decodable {
     let users: [User]
     
-    enum CodingKeys: CodingKey {
+    enum CodingKeys: String, CodingKey {
         case users = "results"
     }
 }
