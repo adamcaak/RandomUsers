@@ -26,13 +26,14 @@ struct User: Decodable, Identifiable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         name = try values.decode(Name.self, forKey: .name)
+        
         let loginInfo = try values.nestedContainer(keyedBy: LoginInfoCodingKeys.self, forKey: .login)
-        id = try loginInfo.decode(String: self, forKey: .uuid)
+        id = try loginInfo.decode(String.self, forKey: .uuid)
     }
     
     enum CodingKeys: String, CodingKey {
         case id
-        case name
+        case login
     }
     
     enum LoginInfoCodingKeys: String, CodingKey {
