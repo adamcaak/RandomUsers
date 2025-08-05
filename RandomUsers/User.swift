@@ -17,7 +17,7 @@ struct Response: Decodable {
 
 struct User: Decodable, Identifiable {
     let id: String
-    let name: String
+    let name: Name
     
     var fullName: String {
         name.title + ". " + name.first + " " + name.last
@@ -32,7 +32,7 @@ struct User: Decodable, Identifiable {
     }
     
     enum CodingKeys: String, CodingKey {
-        case id
+        case name
         case login
     }
     
