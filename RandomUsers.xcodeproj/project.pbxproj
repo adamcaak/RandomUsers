@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		BBD757332E43F51900397331 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = BBD757322E43F51900397331 /* randomUsers.json */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		BB3217BA2E3D56EE00C1216B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		BB3217AC2E3D56ED00C1216B /* RandomUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3217B92E3D56EE00C1216B /* RandomUsersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUsersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB3217C32E3D56EE00C1216B /* RandomUsersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RandomUsersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD757322E43F51900397331 /* randomUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		BB3217A32E3D56ED00C1216B = {
 			isa = PBXGroup;
 			children = (
+				BBD757322E43F51900397331 /* randomUsers.json */,
 				BB3217AE2E3D56ED00C1216B /* RandomUsers */,
 				BB3217BC2E3D56EE00C1216B /* RandomUsersTests */,
 				BB3217C62E3D56EE00C1216B /* RandomUsersUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD757332E43F51900397331 /* randomUsers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
